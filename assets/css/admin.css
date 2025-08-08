@@ -1,0 +1,251 @@
+/* ==========================================================================
+   Import RPPS Admin Styles
+   ========================================================================== */
+
+/* Base Layout */
+.import-rpps-admin {
+    max-width: 1200px;
+}
+
+/* ==========================================================================
+   Card Components
+   ========================================================================== */
+
+/* Base Card */
+.section {
+    background: #fff;
+    border: 1px solid #c3c4c7;
+    border-radius: 4px;
+    margin: 20px 0;
+}
+.section pre code {
+    display: block;
+}
+.section-header {
+    padding: 15px 20px;
+    border-bottom: 1px solid #f0f0f1;
+    background-color: #fafafa;
+}
+
+.section-header h3 {
+    margin: 0;
+    font-size: 1.1em;
+    color: #23282d;
+}
+
+.section-body {
+    padding: 20px;
+}
+
+/* Card Grid for Stats */
+.section-grid {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    margin: 20px 0;
+}
+
+.section-stat {
+    min-width: 200px;
+    text-align: center;
+}
+
+/* ==========================================================================
+   Stat Components
+   ========================================================================== */
+
+.stat-value {
+    font-size: 2em;
+    font-weight: bold;
+    color: #2271b1;
+    margin: 10px 0;
+}
+
+.stat-label {
+    color: #646970;
+    font-size: 0.9em;
+}
+
+
+/* ==========================================================================
+   Form Components
+   ========================================================================== */
+
+.form-inline {
+    display: flex;
+    gap: 10px;
+    align-items: flex-end;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.form-group label {
+    margin-bottom: 5px;
+    font-weight: 500;
+}
+
+/* ==========================================================================
+   Progress Components
+   ========================================================================== */
+
+.progress-container {
+    display: none;
+    margin: 15px 0;
+}
+
+.progress-bar {
+    width: 100%;
+    height: 20px;
+    background: #f0f0f1;
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.progress-fill {
+    height: 100%;
+    background: #2271b1;
+    width: 0%;
+    transition: width 0.3s ease;
+    border-radius: 4px;
+}
+
+.progress-text {
+    text-align: center;
+    margin-top: 5px;
+    color: #646970;
+    font-size: 0.9em;
+}
+
+/* ==========================================================================
+   Log Components
+   ========================================================================== */
+
+.log-container {
+    border: 1px solid #f0f0f1;
+    border-radius: 4px;
+    background: #fafafa;
+}
+
+.log-entry {
+    display: flex;
+    padding: 8px 12px;
+    border-bottom: 1px solid #f0f0f1;
+    font-family: monospace;
+    font-size: 12px;
+}
+
+.log-entry:last-child {
+    border-bottom: none;
+}
+
+.log-timestamp {
+    min-width: 150px;
+    color: #646970;
+    margin-right: 10px;
+}
+
+.log-level {
+    min-width: 60px;
+    margin-right: 10px;
+    font-weight: bold;
+}
+
+.log-level-info {
+    color: #2271b1;
+}
+
+.log-level-error {
+    color: #d63638;
+}
+
+.log-level-warning {
+    color: #dba617;
+}
+
+.log-message {
+    flex: 1;
+    color: #23282d;
+}
+
+/* ==========================================================================
+   Validator Components
+   ========================================================================== */
+
+.import-rpps-validator-result {
+    margin-top: 15px;
+    padding: 10px;
+    border-radius: 4px;
+    display: none;
+}
+
+.import-rpps-validator-result.valid {
+    background: #d1e7dd;
+    color: #0f5132;
+    border: 1px solid #a3cfbb;
+}
+
+.import-rpps-validator-result.invalid {
+    background: #f8d7da;
+    color: #842029;
+    border: 1px solid #f1aeb5;
+}
+
+/* ==========================================================================
+   Responsive Design
+   ========================================================================== */
+
+@media (max-width: 768px) {
+    .section-grid {
+        flex-direction: column;
+    }
+
+    .form-inline {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .form-group {
+        margin-bottom: 10px;
+    }
+
+    .button-group {
+        flex-direction: column;
+    }
+}
+
+/* ==========================================================================
+   Legacy Support (for backward compatibility)
+   ========================================================================== */
+
+
+.import-rpps-progress {
+    display: none;
+    margin: 15px 0;
+}
+
+.import-rpps-progress-bar {
+    width: 100%;
+    height: 20px;
+    background: #f0f0f1;
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.import-rpps-progress-fill {
+    height: 100%;
+    background: #2271b1;
+    width: 0%;
+    transition: width 0.3s ease;
+    border-radius: 4px;
+}
+
+.import-rpps-progress-text {
+    text-align: center;
+    margin-top: 5px;
+    color: #646970;
+    font-size: 0.9em;
+}

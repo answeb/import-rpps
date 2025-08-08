@@ -1,0 +1,45 @@
+{
+    "name": "answeb/import-rpps",
+    "description": "Plugin WordPress pour maintenir à jour une liste de numéros RPPS (Répertoire Partagé des Professionnels de Santé)",
+    "type": "wordpress-plugin",
+    "license": "GPL-2.0-or-later",
+    "authors": [
+        {
+            "name": "Answeb",
+            "homepage": "https://www.answeb.net"
+        }
+    ],
+    "keywords": [
+        "wordpress",
+        "plugin",
+        "rpps",
+        "healthcare",
+        "import"
+    ],
+    "require": {
+        "php": ">=8.0"
+    },
+    "require-dev": {
+        "phpstan/phpstan": "^1.0",
+        "squizlabs/php_codesniffer": "^3.7"
+    },
+    "autoload": {
+        "psr-4": {
+            "ImportRpps\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "ImportRpps\\Tests\\": "tests/"
+        }
+    },
+    "config": {
+        "optimize-autoloader": true,
+        "sort-packages": true
+    },
+    "scripts": {
+        "phpstan": "phpstan analyse",
+        "phpcs": "phpcs --standard=WordPress src/",
+        "phpcbf": "phpcbf --standard=WordPress src/"
+    }
+}
