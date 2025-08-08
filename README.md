@@ -87,6 +87,9 @@ if (function_exists('import_rpps_validate_number')) {
 }
 ```
 
+## Screenshot
+
+![screenshot](screenshot.jpg)
 
 ## Crédits
 
