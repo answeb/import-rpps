@@ -108,3 +108,6 @@ sur-mesure adaptées à leurs besoins spécifiques.
 
 Pour toute question technique ou demande d'évolution du plugin, vous pouvez contacter l'équipe Answeb via notre
 site web.
+
+## Contribution
+Les contributions sont les bienvenues ! Si vous souhaitez contribuer à ce projet, faites une pull request sur la branche develop. Vous devriez également ouvrir une issue pour documenter votre contribution.
