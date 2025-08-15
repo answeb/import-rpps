@@ -5,6 +5,8 @@
 - Version : 1.0.0
 - Requis : WordPress 6.8.1 ou supérieur, PHP8 ou supérieur
 
+![Minimum PHP](https://img.shields.io/badge/php-8-lemon) ![Minimum Wordpress](https://img.shields.io/badge/wordpress-6.8.1-lemon)
+
 ## Description
 
 Ce plugin Wordpress permet de maintenir à jour une liste de numéros RPPS (Répertoire Partagé des Professionnels de
